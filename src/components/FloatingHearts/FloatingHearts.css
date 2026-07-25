@@ -1,0 +1,201 @@
+.floatingHeartsContainer{
+
+position:fixed;
+
+inset:0;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+.floatingHeart{
+
+position:absolute;
+
+bottom:-120px;
+
+animation-name:heartFloat;
+
+animation-timing-function:linear;
+
+animation-iteration-count:infinite;
+
+will-change:transform,opacity;
+
+filter:
+
+drop-shadow(0 0 6px rgba(255,255,255,.4));
+
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:
+
+translateX(0)
+
+translateY(0)
+
+rotate(0deg)
+
+scale(.8);
+
+opacity:0;
+
+}
+
+5%{
+
+opacity:1;
+
+}
+
+20%{
+
+transform:
+
+translateX(-20px)
+
+translateY(-20vh)
+
+rotate(-10deg)
+
+scale(1);
+
+}
+
+40%{
+
+transform:
+
+translateX(30px)
+
+translateY(-45vh)
+
+rotate(12deg)
+
+scale(1.1);
+
+}
+
+60%{
+
+transform:
+
+translateX(-25px)
+
+translateY(-70vh)
+
+rotate(-12deg)
+
+scale(.95);
+
+}
+
+80%{
+
+transform:
+
+translateX(20px)
+
+translateY(-95vh)
+
+rotate(8deg)
+
+scale(1.05);
+
+opacity:.9;
+
+}
+
+100%{
+
+transform:
+
+translateX(-10px)
+
+translateY(-120vh)
+
+rotate(20deg)
+
+scale(.7);
+
+opacity:0;
+
+}
+
+}
+
+/* ---------------- Desktop ---------------- */
+
+@media (min-width:1200px){
+
+.floatingHeart{
+
+filter:
+
+drop-shadow(0 0 12px rgba(255,255,255,.45));
+
+}
+
+}
+
+/* ---------------- Laptop ---------------- */
+
+@media (max-width:1199px){
+
+.floatingHeart{
+
+filter:
+
+drop-shadow(0 0 8px rgba(255,255,255,.35));
+
+}
+
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width:992px){
+
+.floatingHeart{
+
+font-size:20px !important;
+
+}
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width:768px){
+
+.floatingHeart{
+
+font-size:18px !important;
+
+animation-duration:14s !important;
+
+}
+
+}
+
+/* ---------------- Small Mobile ---------------- */
+
+@media (max-width:480px){
+
+.floatingHeart{
+
+font-size:15px !important;
+
+animation-duration:16s !important;
+
+}
+
+}

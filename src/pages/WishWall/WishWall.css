@@ -1,0 +1,217 @@
+.wishPage{
+
+min-height:100vh;
+
+padding:60px 25px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.wishPage h1{
+
+font-family:"Great Vibes";
+
+font-size:64px;
+
+margin-bottom:10px;
+
+background:linear-gradient(
+
+90deg,
+
+#ff4fa3,
+
+#7c4dff,
+
+#4cc9f0
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.wishPage p{
+
+font-size:20px;
+
+opacity:.85;
+
+margin-bottom:40px;
+
+max-width:700px;
+
+line-height:1.8;
+
+}
+
+.wishInput{
+
+width:min(700px,95%);
+
+margin:40px 0;
+
+}
+
+.wishInput textarea{
+
+width:100%;
+
+height:180px;
+
+resize:none;
+
+padding:20px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.15);
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+color:white;
+
+font-size:18px;
+
+outline:none;
+
+}
+
+.wishInput textarea::placeholder{
+
+color:rgba(255,255,255,.6);
+
+}
+
+.successCard{
+
+margin-top:40px;
+
+width:min(700px,95%);
+
+padding:35px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.successCard h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#ffd166;
+
+}
+
+.successCard p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:30px;
+
+}
+
+@media(max-width:768px){
+
+.wishPage h1{
+
+font-size:44px;
+
+}
+
+.wishPage p{
+
+font-size:17px;
+
+}
+
+.wishInput textarea{
+
+height:160px;
+
+font-size:16px;
+
+}
+
+.successCard h2{
+
+font-size:28px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.wishPage{
+
+padding:30px 15px;
+
+}
+
+.wishPage h1{
+
+font-size:34px;
+
+}
+
+.wishPage p{
+
+font-size:15px;
+
+}
+
+.wishInput textarea{
+
+height:140px;
+
+padding:15px;
+
+font-size:15px;
+
+}
+
+.successCard{
+
+padding:20px;
+
+}
+
+.successCard h2{
+
+font-size:22px;
+
+}
+
+.successCard p{
+
+font-size:15px;
+
+}
+
+}

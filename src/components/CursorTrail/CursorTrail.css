@@ -1,0 +1,104 @@
+.cursorParticle{
+
+position:fixed;
+
+pointer-events:none;
+
+user-select:none;
+
+font-size:20px;
+
+z-index:999999;
+
+animation:particleAnimation 1.2s linear forwards;
+
+will-change:transform,opacity;
+
+}
+
+@keyframes particleAnimation{
+
+0%{
+
+transform:
+translate(-50%,-50%)
+scale(.5);
+
+opacity:1;
+
+}
+
+30%{
+
+transform:
+translate(-50%,-70%)
+scale(1.2);
+
+}
+
+70%{
+
+transform:
+translate(-50%,-110%)
+rotate(180deg);
+
+opacity:.7;
+
+}
+
+100%{
+
+transform:
+translate(-50%,-170%)
+rotate(360deg)
+scale(.2);
+
+opacity:0;
+
+}
+
+}
+
+/* ---------------------- */
+/* Tablet */
+/* ---------------------- */
+
+@media (max-width:992px){
+
+.cursorParticle{
+
+font-size:18px;
+
+}
+
+}
+
+/* ---------------------- */
+/* Mobile */
+/* ---------------------- */
+
+@media (max-width:768px){
+
+.cursorParticle{
+
+font-size:16px;
+
+animation-duration:1s;
+
+}
+
+}
+
+/* ---------------------- */
+/* Small Mobile */
+/* ---------------------- */
+
+@media (max-width:480px){
+
+.cursorParticle{
+
+font-size:14px;
+
+}
+
+}

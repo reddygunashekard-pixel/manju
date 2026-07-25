@@ -1,0 +1,147 @@
+.wheelPage{
+
+min-height:100vh;
+
+padding:60px 25px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.wheelPage h1{
+
+font-family:"Great Vibes";
+
+font-size:64px;
+
+margin-bottom:15px;
+
+background:linear-gradient(
+
+90deg,
+
+#ff4fa3,
+
+#7c4dff,
+
+#4cc9f0
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.wheelPage p{
+
+font-size:20px;
+
+margin-bottom:40px;
+
+opacity:.8;
+
+max-width:650px;
+
+}
+
+.rewardCard{
+
+margin:40px 0;
+
+padding:35px;
+
+width:min(600px,95%);
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.rewardCard h2{
+
+margin-bottom:20px;
+
+font-size:28px;
+
+}
+
+.rewardCard h3{
+
+font-size:34px;
+
+color:#ffb703;
+
+line-height:1.5;
+
+}
+
+@media(max-width:768px){
+
+.wheelPage h1{
+
+font-size:46px;
+
+}
+
+.rewardCard{
+
+padding:25px;
+
+}
+
+.rewardCard h3{
+
+font-size:24px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.wheelPage{
+
+padding:30px 15px;
+
+}
+
+.wheelPage h1{
+
+font-size:34px;
+
+}
+
+.wheelPage p{
+
+font-size:16px;
+
+}
+
+.rewardCard h2{
+
+font-size:22px;
+
+}
+
+.rewardCard h3{
+
+font-size:20px;
+
+}
+
+}   

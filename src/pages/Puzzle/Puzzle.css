@@ -1,0 +1,216 @@
+.puzzlePage{
+
+width:100%;
+
+min-height:100vh;
+
+padding:40px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:30px;
+
+position:relative;
+
+}
+
+.puzzlePage h1{
+
+font-size:64px;
+
+font-family:"Great Vibes";
+
+background:linear-gradient(
+90deg,
+#ff4fa3,
+#7c4dff,
+#4cc9f0
+);
+
+background-clip:text;
+-webkit-background-clip:text;
+
+color:transparent;
+-webkit-text-fill-color:transparent;
+
+margin:0;
+
+text-align:center;
+
+}
+
+/* ------------------------- */
+/* Board + Tray Layout */
+/* ------------------------- */
+
+.puzzleContent{
+
+width:100%;
+
+max-width:1600px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+gap:35px;
+
+}
+
+/* ------------------------- */
+
+.boardSection{
+
+flex:0 0 auto;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+/* ------------------------- */
+
+.traySection{
+
+flex:1;
+
+min-width:350px;
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+/* ------------------------- */
+
+.continueSection{
+
+margin-top:25px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+/* ========================= */
+/* Large Desktop */
+/* ========================= */
+
+@media(min-width:1600px){
+
+.puzzleContent{
+
+max-width:1800px;
+
+gap:45px;
+
+}
+
+}
+
+/* ========================= */
+/* Laptop */
+/* ========================= */
+
+@media(max-width:1200px){
+
+.puzzlePage{
+
+padding:30px;
+
+}
+
+.puzzleContent{
+
+gap:25px;
+
+}
+
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media(max-width:992px){
+
+.puzzleContent{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.boardSection{
+
+width:100%;
+
+}
+
+.traySection{
+
+width:100%;
+
+}
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:768px){
+
+.puzzlePage{
+
+padding:20px;
+
+gap:20px;
+
+}
+
+.puzzlePage h1{
+
+font-size:42px;
+
+}
+
+.puzzleContent{
+
+gap:20px;
+
+}
+
+}
+
+/* ========================= */
+/* Small Mobile */
+/* ========================= */
+
+@media(max-width:480px){
+
+.puzzlePage{
+
+padding:15px;
+
+}
+
+.puzzlePage h1{
+
+font-size:34px;
+
+}
+
+}
